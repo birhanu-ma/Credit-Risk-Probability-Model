@@ -1,0 +1,39 @@
+# Core
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+
+# ML Model Training & Evaluation
+# xgboost
+# lightgbm
+
+# WoE / IV Feature Engineering (optional but required in your task)
+# xverse
+# scorecardpy
+
+# MLflow (experiment tracking + registry)
+# mlflow
+
+# API (FastAPI Deployment)
+# fastapi
+# uvicorn
+
+# Testing
+# pytest
+
+# Linting (CI/CD)
+# flake8
+# black
+
+# Notebook & Visualization
+# notebook
+# ipykernel
+
+# Date/Time Handling
+# python-dateutil
+
+# Docker-related (not installed via pip but included for completeness)
+# docker
+
