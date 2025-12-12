@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+import sys, os
 
 class EDAAnalysis:
     """Performs visual EDA quickly without blocking."""
@@ -128,3 +129,23 @@ class EDAAnalysis:
         
         print(f"Outliers removed for {col}: {outlier_count} ({outlier_percent:.2f}%)")
         print(f"New DataFrame size: {len(self.df)} rows.")
+
+    def save_processed_data(self, file_path: str):
+        """
+        Saves the current state of the DataFrame (self.df) to a CSV file,
+        creating necessary directories if they don't exist.
+        """
+        
+        # 1. Determine the directory path
+        directory = os.path.dirname(file_path)
+        
+        # 2. Create the directory if it doesn't exist
+        if directory and not os.path.exists(directory):
+            print(f"Creating directory: {directory}")
+            # Use os.makedirs with exist_ok=True to handle existing paths and create nested paths
+            os.makedirs(directory, exist_ok=True)
+        
+        # 3. Save the DataFrame to CSV
+        self.df.to_csv(file_path, index=False)
+        print(f"\n✅ Processed data successfully saved to: {file_path}")
+        print(f"Final DataFrame size: {len(self.df)} rows.")
