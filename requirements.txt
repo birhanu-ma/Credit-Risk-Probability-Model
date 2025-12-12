@@ -4,14 +4,18 @@ numpy
 scikit-learn
 matplotlib
 seaborn
+category-encoders
+
+
+
 
 # ML Model Training & Evaluation
 # xgboost
 # lightgbm
 
 # WoE / IV Feature Engineering (optional but required in your task)
-# xverse
-# scorecardpy
+xverse
+scorecardpy
 
 # MLflow (experiment tracking + registry)
 # mlflow
