@@ -6,38 +6,22 @@ matplotlib
 seaborn
 category-encoders
 
+xgboost>=1.7.0
+lightgbm>=4.3.0
 
+xverse>=0.1.0
+scorecardpy>=0.1.0
 
+mlflow>=2.6.0
 
-# ML Model Training & Evaluation
-# xgboost
-# lightgbm
+fastapi>=0.100.0
+uvicorn>=0.23.0
 
-# WoE / IV Feature Engineering (optional but required in your task)
-xverse
-scorecardpy
+pytest>=7.4.0
+flake8>=6.1.0
+black>=23.9.0
 
-# MLflow (experiment tracking + registry)
-# mlflow
+notebook>=6.6.0
+ipykernel>=6.26.0
 
-# API (FastAPI Deployment)
-# fastapi
-# uvicorn
-
-# Testing
-# pytest
-
-# Linting (CI/CD)
-# flake8
-# black
-
-# Notebook & Visualization
-# notebook
-# ipykernel
-
-# Date/Time Handling
-# python-dateutil
-
-# Docker-related (not installed via pip but included for completeness)
-# docker
-
+python-dateutil>=2.9.0
